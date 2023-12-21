@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LIBRARYSYSTEM1202.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=127.0.0.1\DATASERVER;Initial Catalog=LIBRARY_1202;User Id=sa;Password=p@ssw0rd;MultipleActiveResultSets=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

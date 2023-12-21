@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{481A9ADD-5B1F-4892-9D75-59A606E30D52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LIBRARYSYSTEM1202</RootNamespace>
+    <AssemblyName>LIBRARYSYSTEM1202</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_about.designer.cs">
+      <DependentUpon>Frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_books.designer.cs">
+      <DependentUpon>Frm_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_borrow.designer.cs">
+      <DependentUpon>Frm_borrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_historyreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_historyreport.Designer.cs">
+      <DependentUpon>Frm_historyreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_login.designer.cs">
+      <DependentUpon>Frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_lost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_lost.Designer.cs">
+      <DependentUpon>Frm_lost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_reporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_reporting.Designer.cs">
+      <DependentUpon>Frm_reporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reports.Designer.cs">
+      <DependentUpon>Frm_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reports2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reports2.Designer.cs">
+      <DependentUpon>Frm_Reports2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_return.designer.cs">
+      <DependentUpon>Frm_return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_signup.designer.cs">
+      <DependentUpon>Frm_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_user.designer.cs">
+      <DependentUpon>Frm_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Rpt_borrowhistory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_borrowhistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MyDS.cs">
+      <DependentUpon>MyDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MyDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Rpt_borrowed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_borrowed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Rpt_Borrowing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Borrowing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_about.resx">
+      <DependentUpon>Frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_books.resx">
+      <DependentUpon>Frm_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_borrow.resx">
+      <DependentUpon>Frm_borrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_historyreport.resx">
+      <DependentUpon>Frm_historyreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_login.resx">
+      <DependentUpon>Frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_lost.resx">
+      <DependentUpon>Frm_lost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_reporting.resx">
+      <DependentUpon>Frm_reporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reports.resx">
+      <DependentUpon>Frm_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reports2.resx">
+      <DependentUpon>Frm_Reports2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_return.resx">
+      <DependentUpon>Frm_return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_signup.resx">
+      <DependentUpon>Frm_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_user.resx">
+      <DependentUpon>Frm_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\Rpt_borrowhistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_borrowhistory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Rpt_borrowed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_borrowed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Rpt_Borrowing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Borrowing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\MyDS.xsc">
+      <DependentUpon>MyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\MyDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\MyDS.xss">
+      <DependentUpon>MyDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select_Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsb.Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsb.Load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsb.Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsb.Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn.Generate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MNHS Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2069874.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3127.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\029-instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\036-facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\008-twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrow_label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_from.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20190302_152212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1551511921468.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
